@@ -163,6 +163,8 @@ async function seedRevenue(client) {
 async function main() {
   const client = await db.connect();
 
+  console.log(client);
+
   await seedUsers(client);
   await seedCustomers(client);
   await seedInvoices(client);
